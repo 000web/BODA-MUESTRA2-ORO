@@ -43,12 +43,35 @@ body{
 #head{
     height: 100vh;
     width: 100%;
-    background-image: url("images_novios/h2.jpeg");
+    background-image: url("images_novios/h1.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    animation: bgChange 12s linear infinite;
+}
+@keyframes bgChange{
+    0%{
+        background-image: url("images_novios/h1.jpeg");
+    }
+    21.666%{
+        background-image: url("images_novios/h1.jpeg");
+    }
+    
+    31.666%{
+        background-image: url("images_novios/h2.jpeg");
+    }
+    53.333%{
+        background-image: url("images_novios/h2.jpeg");
+    }
+    
+    63.333%{
+        background-image: url("images_novios/h3.jpeg");
+    }
+    90%{
+        background-image: url("images_novios/h3.jpeg");
+    }
 }
 #head_text{
     width: 100%;
@@ -503,7 +526,7 @@ button::after{text-decoration: none;}
         width: 90vw;
     }
     #head{
-        background-image: url("images_novios/v2.jpeg");
+        background-image: url("images_novios/v1.jpeg");
     }
     .inv_h{
         font-size: 1.7rem;
@@ -560,6 +583,28 @@ button::after{text-decoration: none;}
     }
     #p3{
         grid-area: p3;
+    }
+    @keyframes bgChange{
+        0%{
+            background-image: url("images_novios/v1.jpeg");
+        }
+        21.666%{
+            background-image: url("images_novios/v1.jpeg");
+        }
+        
+        31.666%{
+            background-image: url("images_novios/v2.jpeg");
+        }
+        53.333%{
+            background-image: url("images_novios/v2.jpeg");
+        }
+        
+        63.333%{
+            background-image: url("images_novios/v3.jpeg");
+        }
+        90%{
+            background-image: url("images_novios/v3.jpeg");
+        }
     }
 }
 /*=========================================================*/
