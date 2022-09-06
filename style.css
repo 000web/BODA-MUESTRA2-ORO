@@ -1,0 +1,596 @@
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+html{
+    height: -webkit-fill-available;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: -webkit-fill-available;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.main_section{
+    scroll-snap-align: start;
+}
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courgette&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+
+
+
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+#head{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images_novios/h2.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+#head_text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+table, tr, td{
+    border-collapse: collapse;
+}
+#head_table{
+    width: 30vw;
+    background-color: rgba(256, 256, 256, 0.6);
+    border-radius: 2rem;
+    backdrop-filter: blur(5px);
+}
+.r_border{
+    border-right: 2px solid #262626;
+    height: 10rem;
+}
+.nam{
+    width: 50%;
+    text-align: center;
+    color: #262626;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.date_h{
+    text-align: center;
+    color: #262626;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.inv_h{
+    text-align: center;
+    color: #262626;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+#couple{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/leaves.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#couple_inner{
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    background-color: #eaddca;
+    border-radius: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "ci1 ci2 ci3";
+}
+#ci1{
+    grid-area: ci1;
+}
+#ci2{
+    grid-area: ci2;
+}
+#ci3{
+    grid-area: ci3;
+}
+.ci_sub_sub{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+}
+.cs{
+    color: #30593b;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.cs2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#ci2_1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+#religious{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/leaves2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#party{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/leaves.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#religious_sub{
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr;
+    grid-template-areas:
+    "r1 r3"
+    "r2 r3";
+}
+#r1{
+    grid-area: r1;
+}
+#r2{
+    grid-area: r2;
+}
+#r3{
+    grid-area: r3;
+}
+#party_sub{
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr;
+    grid-template-areas:
+    "r1 r3"
+    "r2 r3";
+}
+#p1{
+    grid-area: r1;
+}
+#p2{
+    grid-area: r2;
+}
+#p3{
+    grid-area: r3;
+}
+.places_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#r1{
+    background-color: #2d553b;
+    color: #eaddca;
+}
+#p1{
+    background-color: #eaddca;
+    color: #2d553b;
+}
+#r2{
+    background-image: url("images/santa_prisca.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+#p2{
+    background-image: url("images/salon.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+#r3{
+    border-radius: 1rem;
+    border: 2px solid #2d553b;
+    background-color: #2d553b;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#p3{
+    border-radius: 1rem;
+    border: 2px solid #eaddca;
+    background-color: #eaddca;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map1{
+    border-radius: 1rem;
+}
+#map2{
+    border-radius: 1rem;
+}
+.places_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+.places_place{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.places_hour{
+    font-family: 'Poppins', sans-serif;
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+#itinerary{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/leaves3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#itinerary_inner{
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    background-color: #2d553b;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#itinerary_title{
+    color: #eaddca;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+#itinerary_text{
+    color: #bebebe;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.4rem;
+}
+#ftable{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.adjust_td{
+    min-width: 80px;
+}
+.right_border{
+    border-right: 3px dashed white;
+    height: 4rem;
+}
+.ftime{
+    background-color: rgb(92, 141, 90);
+    color: white;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    border-radius: 0.5rem;
+    text-shadow: 0px 0px 10px black;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+.left{
+    text-align: left;
+}
+.activity{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-left: 1rem;
+}
+.subplace{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.4rem;
+    color: #D3AC79;
+    font-weight: lighter;
+    padding-left: 1rem;
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+#foot{
+    background-color: #262626;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot_name{
+    width: 50%;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.7rem;
+    color: #D3AC79;
+}
+.ri_border{
+    border-right: 2px solid #D3AC79;
+    height: 5rem;
+}
+.ri_border2{
+    border-right: 2px solid #D3AC79;
+    height: 3rem;
+}
+.foot_author{
+    width: 50%;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    color: #D3AC79;
+}
+.author_container{
+    font-family: 'Poppins', sans-serif;
+}
+
+button:visited{text-decoration: none;}
+button::after{text-decoration: none;}
+.author_button{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+}
+.author_button{
+    height: 2rem;
+}
+.by{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+
+@media (max-width: 1000px){
+    #head_table{
+        width: 40vw;
+    }
+    #religious_sub{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 1.2fr;
+        grid-template-areas:
+        "r1 r2"
+        "r3 r3";
+    }
+    #r1{
+        grid-area: r1;
+    }
+    #r2{
+        grid-area: r2;
+    }
+    #r3{
+        grid-area: r3;
+    }
+    #party_sub{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 1.2fr;
+        grid-template-areas:
+        "p1 p2"
+        "p3 p3";
+    }
+    #p1{
+        grid-area: p1;
+    }
+    #p2{
+        grid-area: p2;
+    }
+    #p3{
+        grid-area: p3;
+    }
+}
+
+@media (max-width: 800px){
+    #head_table{
+        width: 50vw;
+    }
+    #couple_inner{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "ci1 ci3"
+        "ci2 ci2";
+    }
+    #ci1{
+        grid-area: ci1;
+    }
+    #ci2{
+        grid-area: ci2;
+    }
+    #ci3{
+        grid-area: ci3;
+    }
+}
+
+@media (max-width: 570px){
+    #head_table{
+        width: 90vw;
+    }
+    #head{
+        background-image: url("images_novios/v2.jpeg");
+    }
+    .inv_h{
+        font-size: 1.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #couple_inner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "ci1"
+        "ci2"
+        "ci3";
+    }
+    #ci1{
+        grid-area: ci1;
+    }
+    #ci2{
+        grid-area: ci2;
+    }
+    #ci3{
+        grid-area: ci3;
+    }
+    #religious_sub{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "r1"
+        "r2"
+        "r3";
+    }
+    #r1{
+        grid-area: r1;
+    }
+    #r2{
+        grid-area: r2;
+    }
+    #r3{
+        grid-area: r3;
+    }
+    #party_sub{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "p1"
+        "p2"
+        "p3";
+    }
+    #p1{
+        grid-area: p1;
+    }
+    #p2{
+        grid-area: p2;
+    }
+    #p3{
+        grid-area: p3;
+    }
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+@media (max-height: 500px){
+    #head{
+        display: flex;
+        align-items: center;
+    }
+    #head_text{
+        padding-bottom: 0rem;
+    }
+    .right_border{
+        height: 2rem;
+    }
+    .subplace{
+        padding-left: 0.1rem;
+    }
+    #foot{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+    }
+}
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
